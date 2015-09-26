@@ -1,0 +1,158 @@
+$alto: #D6D6D6;
+$black-pearl: #040F16;
+$aqua: #00F2FF;
+$orient: #005E7C;
+$prussian: #00273A;
+$carrot: #FF923F;
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clean {
+  padding: 0;
+  margin: 0;
+}
+
+#menu-container {
+  background-color: $black-pearl;
+  font-family: 'Oswald', sans-serif;
+  color: $alto;
+  height: 100vh;
+  img {
+    padding: 40px 14px;
+  }
+  ul {
+    padding: 40px 0px;
+      list-style-type: none;
+    a {
+      color: $alto;
+      font-size: 2rem;
+      text-decoration: none;
+      text-align: center;
+      transition: all .1s ease-in-out;
+      li {
+        padding: 50px 0;
+        transition: all .1s ease-in-out;
+      }
+    }
+    a:hover {
+      color: $prussian;
+      cursor: pointer;
+      font-weight: 700;
+      li {
+        background-color: $carrot;
+      }
+    }
+  }
+}
+
+#work-container {
+  height: 100vh;
+}
+
+.rotate-left {
+  transform: rotate(-3deg);
+  transition: transform .5s ease;
+}
+
+.rotate-left:hover {
+  transform: rotate(-1deg);
+  transition: transform .5s ease;
+}
+
+.rotate-right {
+  transform: rotate(3deg);
+  transition: transform .5s ease;
+}
+
+.rotate-right:hover {
+  transform: rotate(1deg);
+  transition: transform .5s ease;
+}
+
+.panel {
+  border-radius: 0;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    display: block;
+    .portrait {
+      width: 100%;
+    }
+    .landscape {
+      height: 100%;
+    }
+  }
+}
+
+.panel-1, .panel-2, .panel-3, .panel-4 {
+  width: 100%;
+  height: 0;
+}
+
+.panel-1 {
+  padding-bottom: 100%;
+  img {
+    top: -25%;
+    left: -20%;
+  }
+}
+
+.panel-2 {
+  padding-bottom: 100%;
+  img {
+    top: -2%;
+    left: -25%;
+  }
+}
+
+.panel-3 {
+  padding-bottom: 200%;
+  img {
+    height: 140%;
+    left: -80%;
+    top: -10%;
+  }
+}
+
+.panel-4 {
+  padding-bottom: 50%;
+  img {
+    top: -40%;
+    left: -30%;
+  }
+}
+
+.panel-5 {
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  float: left;
+  img {
+    top: -30%;
+    left: -20%;
+  }
+}
+
+.panel-6 {
+  background-color: $prussian;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  float: left;
+  img {
+    top: -30%;
+    left: -5%;
+  }
+}
+
+.panel-7 {
+  height: 0;
+  padding-bottom: 20%;
+}

@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+* {
+  margin: 0;
+  padding: 0; }
+
+.clean {
+  padding: 0;
+  margin: 0; }
+
+#menu-container {
+  background-color: #040F16;
+  font-family: 'Oswald', sans-serif;
+  color: #D6D6D6;
+  height: 100vh; }
+  #menu-container img {
+    padding: 40px 14px; }
+  #menu-container ul {
+    padding: 40px 0px;
+    list-style-type: none; }
+    #menu-container ul a {
+      color: #D6D6D6;
+      font-size: 2rem;
+      text-decoration: none;
+      text-align: center;
+      transition: all .1s ease-in-out; }
+      #menu-container ul a li {
+        padding: 50px 0;
+        transition: all .1s ease-in-out; }
+    #menu-container ul a:hover {
+      color: #00273A;
+      cursor: pointer;
+      font-weight: 700; }
+      #menu-container ul a:hover li {
+        background-color: #FF923F; }
+
+#work-container {
+  height: 100vh; }
+
+.rotate-left {
+  transform: rotate(-3deg);
+  transition: transform .5s ease; }
+
+.rotate-left:hover {
+  transform: rotate(-1deg);
+  transition: transform .5s ease; }
+
+.rotate-right {
+  transform: rotate(3deg);
+  transition: transform .5s ease; }
+
+.rotate-right:hover {
+  transform: rotate(1deg);
+  transition: transform .5s ease; }
+
+.panel {
+  border-radius: 0;
+  border: 0;
+  position: relative;
+  overflow: hidden; }
+  .panel img {
+    position: absolute;
+    display: block; }
+    .panel img .portrait {
+      width: 100%; }
+    .panel img .landscape {
+      height: 100%; }
+
+.panel-1, .panel-2, .panel-3, .panel-4 {
+  width: 100%;
+  height: 0; }
+
+.panel-1 {
+  padding-bottom: 100%; }
+  .panel-1 img {
+    top: -25%;
+    left: -20%; }
+
+.panel-2 {
+  padding-bottom: 100%; }
+  .panel-2 img {
+    top: -2%;
+    left: -25%; }
+
+.panel-3 {
+  padding-bottom: 200%; }
+  .panel-3 img {
+    height: 140%;
+    left: -80%;
+    top: -10%; }
+
+.panel-4 {
+  padding-bottom: 50%; }
+  .panel-4 img {
+    top: -40%;
+    left: -30%; }
+
+.panel-5 {
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  float: left; }
+  .panel-5 img {
+    top: -30%;
+    left: -20%; }
+
+.panel-6 {
+  background-color: #00273A;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  float: left; }
+  .panel-6 img {
+    top: -30%;
+    left: -5%; }
+
+.panel-7 {
+  height: 0;
+  padding-bottom: 20%; }
+
+/*# sourceMappingURL=port.css.map */
